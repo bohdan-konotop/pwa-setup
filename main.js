@@ -1,5 +1,5 @@
 // CREATE SERVICE WORKER
-const serviceWorkerLink = 'sw.js';
+const serviceWorkerLink = './sw.js';
 let serviceWorkerRegistration;
 
 if ('serviceWorker' in navigator) {
