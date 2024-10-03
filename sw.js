@@ -1,8 +1,8 @@
 const CACHE_NAME = 'PWA_CACHE';
 const urlsToCache = [
   '/',
-  '/main.css',
-  '/main.js',
+  'main.css',
+  'main.js',
   'https://freetestapi.com/api/v1/movies'
 ];
 
