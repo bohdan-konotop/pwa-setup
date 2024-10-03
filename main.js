@@ -1,4 +1,4 @@
-CREATE SERVICE WORKER
+// CREATE SERVICE WORKER
 const serviceWorkerLink = './src/sw.js';
 let serviceWorkerRegistration;
 
