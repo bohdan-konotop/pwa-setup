@@ -71,8 +71,7 @@ function showNotification() {
         console.log(serviceWorkerRegistration);
         const options = {
           body: 'Here is a notification from your PWA!',
-          icon: './src/assets/icons/small-icon.png', // Replace with your own icon path
-          badge: './src/assets/icons/small-icon.png' // Replace with your own badge path
+          icon: '', // Replace with your own icon path
         };
         serviceWorkerRegistration.showNotification('PWA Notification', options);
       } else {
