@@ -6,6 +6,7 @@ if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register(serviceWorkerLink).then((registration) => {
         serviceWorkerRegistration = registration;
+        console.log(serviceWorkerRegistration, 1111)
         console.log('Service Worker registered with scope:', registration.scope);
       }).catch((error) => {
         console.log('Service Worker registration failed:', error);
@@ -67,6 +68,7 @@ function showNotification() {
     if (Notification.permission === 'granted') {
       // Check if the service worker is ready
       if (serviceWorkerRegistration) {
+        console.log(serviceWorkerRegistration);
         const options = {
           body: 'Here is a notification from your PWA!',
           icon: './src/assets/icons/small-icon.png', // Replace with your own icon path
